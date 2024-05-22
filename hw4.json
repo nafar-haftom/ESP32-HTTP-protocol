@@ -1,0 +1,80 @@
+{
+  "uuid": "5fbf5d36-657e-45af-9f26-efec600069a7",
+  "lastMigration": 32,
+  "name": "Hw4",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 80,
+  "hostname": "192.168.4.1",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "c720d515-9240-43b3-87cf-8a18d9f4a093",
+      "type": "http",
+      "documentation": "base route",
+      "method": "get",
+      "endpoint": "*",
+      "responses": [
+        {
+          "uuid": "9a6ffabe-232e-4bc3-9d23-c3c72bdbbbae",
+          "body": "{\n  \"device\": \"LED\",\n  \"command\": \"on\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "c720d515-9240-43b3-87cf-8a18d9f4a093"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
